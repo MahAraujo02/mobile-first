@@ -1,0 +1,78 @@
+/* Estilo base para dispositivos móveis */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .article__section{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+  }
+  .aside{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .aside__link{
+    border: 1px solid black;
+    margin: 20px;
+  }
+  p{
+    max-width: 100%;
+  }
+
+  @media (min-width: 980px) {
+    body {
+        display: flex;
+        color: #333;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+      }
+      .article__section{
+        max-width: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 20px;
+        margin: 20px;
+
+      }
+      .section{
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+      }
+      .aside{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border: 1px solid;
+        margin: 20px;
+      }
+      .aside__link{
+        border: 1px solid black;
+      }
+      p{
+        max-width: 100%;
+      }
+  }
